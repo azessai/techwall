@@ -1,0 +1,14 @@
+<div [ngStyle]="{'color': color}" [hidden]="show" [style.backgroundColor]="bgColor">
+  Binding bgColor = {{bgColor}}
+</div>
+<div>
+  <button class="btn btn-danger" (click)="changeStatus()">Allumer/éteindre</button>
+</div>
+
+<div class="square" [style.backgroundColor]="color">
+  <i class="fa fa-angellist fa-5x" aria-hidden="true"></i>
+</div>
+<input #inputColor (change)="changeColor(inputColor)" type="text" class="form-control">
+
+<input [(ngModel)]="color" type="text" class="form-control">
+color : {{color}}
