@@ -2,9 +2,15 @@ p {
   background-color: red;
   color: yellow;
 }
+a {
+  background-color: rgb(219, 217, 221);
+  color: rgb(68, 0, 255);
+  padding: 0.2em;
+  margin-right: 1em;
+}
 .center {
   background-color: beige;
   justify-content: center;
   padding: 0px 30%;
-  height: 100px;
+  height: 110px;
 }

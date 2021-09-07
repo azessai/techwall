@@ -1,3 +1,4 @@
 <ol class="list-group">
+  Liste des cv
   <app-item-cv *ngFor="let personne of personnes" [personne]="personne" (sendSelectedPersonne)="getSelectedPersonne($event)"></app-item-cv>
 </ol>
