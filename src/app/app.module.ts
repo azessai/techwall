@@ -23,7 +23,7 @@ import { StyleComponent } from './directive/style/style.component';
     ListeCvComponent,
     ItemCvComponent,
     DetailCvComponent,
-    StyleComponent
+    StyleComponent,
   ],
   imports: [
     BrowserModule,

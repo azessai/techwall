@@ -1,0 +1,13 @@
+<p [ngStyle]="{
+  'color': color,
+  'font-size': size,
+  'backgroundColor': bgColor
+}">style Directive works!</p>
+<input type="text" class="form-control" [(ngModel)]="color">
+<input
+  #sizeInput
+  type="number"
+  value="12"
+  class="form-control"
+  (change)="changeSize(sizeInput)"
+>
