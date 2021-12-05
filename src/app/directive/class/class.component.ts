@@ -47,9 +47,5 @@ export class ClassComponent implements OnInit {
         break;
       }
     }
-  changeTeam() {
-    this.est = true;
-    this.barca = false;
-    this.milan = false;
   }
 }
