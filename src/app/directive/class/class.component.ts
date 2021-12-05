@@ -10,11 +10,14 @@ export class ClassComponent implements OnInit {
   est = false;
   barca = false;
   milan = true;
+
   team: string = "MILAN";
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
   getRandomInt(max: number) {
     return Math.floor(Math.random() * max);
   }
@@ -44,5 +47,9 @@ export class ClassComponent implements OnInit {
         break;
       }
     }
+  changeTeam() {
+    this.est = true;
+    this.barca = false;
+    this.milan = false;
   }
 }
