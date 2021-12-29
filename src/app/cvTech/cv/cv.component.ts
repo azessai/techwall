@@ -16,7 +16,6 @@ export class CvComponent implements OnInit {
       new Personne(1, 'ES SAI', 'Azeddine', 50, 'azeddine.png', 2222, 'Dev'),
       new Personne(2, 'ZIDANE', 'Zinedine', 45, 'zidane.png', 3333, 'Footballer')
     ];
-    this.selectedPersonne = this.personnes[0];
   }
   getSelectedPersonne(personne: Personne) {
     this.selectedPersonne = personne;

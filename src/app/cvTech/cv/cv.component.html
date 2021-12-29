@@ -3,6 +3,6 @@
     <app-liste-cv data-test='liste' [personnes]="personnes" (sendSelectedPersonne)="getSelectedPersonne($event)"></app-liste-cv>
   </div>
   <div class="col-md-6 col-sm-9">
-    <app-detail-cv data-test='detail' [selectedPersonne]="selectedPersonne"></app-detail-cv>
+    <app-detail-cv *ngIf="selectedPersonne" data-test='detail' [selectedPersonne]="selectedPersonne"></app-detail-cv>
   </div>
 </div>
