@@ -12,6 +12,13 @@ export class ClassComponent implements OnInit {
   milan = true;
 
   team: string = "MILAN";
+  show = false;
+  teams = [
+    'est',
+    'om',
+    'barca',
+    'milan',
+  ]
 
   constructor() { }
 

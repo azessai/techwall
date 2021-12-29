@@ -3,5 +3,13 @@
 'barca': barca,
 'milan': milan
 }"
->L'équipe {{team}}</p>
-<button class="btn btn-danger" (click)="changeTeam()" >Changer Team</button>
+>L'équipe {{team}}</p><br>
+<button class="btn btn-danger" (click)="changeTeam()" >Changer Team</button><br><br>
+
+<div class="laMarge" appHighlight>Je teste une directive personalisée</div><br>
+<input *ngIf="show" type="text" class="form-control" appRainbow><br>
+<button class="btn btn-primary" (click)="show = ! show">Affiche/Cacher</button>
+
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let team of teams; let ind=index; let ev=even">{{team}} - {{ind}} - {{ev}}</li>
+</ol>
