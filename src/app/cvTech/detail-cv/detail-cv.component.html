@@ -3,14 +3,14 @@
       <div class="card">
           <div class="front">
               <div class="cover">
-                  <img src="assets/images/rotating_card_thumb2.png">
+                  <img src="assets/images/rotating_card_thumb2.png" alt="Rotation">
               </div>
               <div class="user">
-                  <img class="img-circle" src="assets/images/{{selectedPersonne.path}}">
+                  <img class="img-circle" src="assets/images/{{selectedPersonne.path | defaultImage}}" alt="Image">
               </div>
               <div class="content">
                   <div class="main">
-                      <h3 class="name">{{selectedPersonne.firstname}} {{selectedPersonne.name}} </h3>
+                      <h3 class="name">{{selectedPersonne.firstname | titlecase}} {{selectedPersonne.name | titlecase}} </h3>
                       <p class="profession">{{selectedPersonne.job}}</p>
 
                       <p class="text-center">"I'm the new Sinatra, and since I made it here I can make it anywhere, yeah, they love me everywhere"</p>

@@ -1,5 +1,5 @@
 
 <li class="list-group-item" (click)="selectItem()">
-  <img src="./../../assets/images/{{personne.path}}" alt="{{personne.name}}">
-  {{personne.firstname}} {{personne.name}} : {{personne.age}} ans ({{personne.job}})
+  <img src="./../../assets/images/{{personne.path | defaultImage}}" alt="{{personne.name}}">
+  {{personne.firstname | titlecase}} {{personne.name | titlecase}} : {{personne.age}} ans ({{personne.job}})
 </li>
