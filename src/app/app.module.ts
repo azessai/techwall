@@ -13,6 +13,8 @@ import { ItemCvComponent } from './cvTech/item-cv/item-cv.component';
 import { DetailCvComponent } from './cvTech/detail-cv/detail-cv.component';
 import { StyleComponent } from './directive/style/style.component';
 import { ClassComponent } from './directive/class/class.component';
+import {HighlightDirective} from "./directive/custom/highlight.directive";
+import {RainbowDirective} from "./directive/custom/rainbow.directive";
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { ClassComponent } from './directive/class/class.component';
     DetailCvComponent,
     StyleComponent,
     ClassComponent,
+    HighlightDirective,
+    RainbowDirective,
   ],
   imports: [
     BrowserModule,
