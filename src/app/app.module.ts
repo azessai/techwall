@@ -16,6 +16,7 @@ import { ClassComponent } from './directive/class/class.component';
 import {HighlightDirective} from "./directive/custom/highlight.directive";
 import {RainbowDirective} from "./directive/custom/rainbow.directive";
 import { DefaultImagePipe } from './cvTech/default-image.pipe';
+import { EmbaucheComponent } from './cvTech/embauche/embauche.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { DefaultImagePipe } from './cvTech/default-image.pipe';
     HighlightDirective,
     RainbowDirective,
     DefaultImagePipe,
+    EmbaucheComponent,
   ],
   imports: [
     BrowserModule,
